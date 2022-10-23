@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Теги button, input, table</title>
+    <style>
+        div{
+            margin-bottom: 20px;
+        }
+        label{
+            width: 80px;
+            display: inline-block;
+        }
+        fieldset{
+            width: 600px;
+            display: inline-block;
+        }
+    </style>
+</head>
+<body>
+    <form>
+        <p>
+        <fieldset>
+            <legend>Общая информация</legend>
+            <div>
+                <label for="surname">Фамилия</label>
+                <input id="surname" type="text" name="surname" placeholder="Иванов">
+            </div>
+            <div>
+                <label for="name">Имя</label>
+                <input id="name" type="text" name="name" placeholder="Иван">
+            </div>
+            <div>
+                <label for="second_name">Отчество</label>
+                <input id="second_name" type="text" name="second_name" placeholder="Иванович">
+            </div>
+            <div>
+                <label for="email">email</label>
+                <input id="email" type="email" name="email" placeholder="mail@mail.ru">
+            </div>
+        </fieldset>
+        </p>
+        <p>
+        <fieldset>
+            <legend>Пол</legend>
+            <div>
+                <input id="male" type="radio" name="gender" value="male">
+                <label for="male">М</label>
+
+                <input id="female" type="radio" name="gender" value="female">
+                <label for="female">Ж</label>
+            </div>
+        </fieldset>
+        </p>
+        <p>
+        <fieldset>
+            <legend>Хобби</legend>
+            <div>
+                <input id="ch1" type="checkbox" name="hobby" value="drawing">
+                <label for="ch1">Рисование</label>
+
+                <input id="ch2" type="checkbox" name="hobby" value="reading">
+                <label for="ch2">Чтение</label>
+
+                <input id="ch3" type="checkbox" name="hobby" value="knitting">
+                <label for="ch3">Вязание</label>
+
+                <input id="ch4" type="checkbox" name="hobby" value="cooking">
+                <label for="ch4">Кулинария</label>
+            </div>
+        </fieldset>
+        </p>
+        <button type="submit">Отправить</button>
+        <button type="reset">Очистить</button>
+    </form>
+</body>
+</html>
